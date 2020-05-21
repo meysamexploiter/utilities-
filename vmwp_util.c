@@ -30,7 +30,7 @@ VOID WorkRoutine(PVOID Parameter)
     LARGE_INTEGER delay;
 
     delay.QuadPart = -10000 * 2000;
-    KeDelayExecutionThread(KernelMode, FALSE, &delay);
+//    KeDelayExecutionThread(KernelMode, FALSE, &delay);
 
 
     if (STATUS_SUCCESS == KeDelayExecutionThread(KernelMode, FALSE, &delay))
